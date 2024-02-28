@@ -6,16 +6,37 @@
 import random
 
 # Simplified example with one category. Expand as needed.
+
 questions = {
     "Science": [
         ("What is the chemical symbol for water?", "H2O"),
-        # Add more questions as tuples (question, answer)
-    ], 
+        ("What is the formula to calculate speed", "s=d/t"),
+        ("What is the speed of light", "3x10^8")
+    ],
+    "Maths": [
+        ("What is the formula for Area of Rectangle", "L*B"),
+        ("What is the area of triangle", "0.5*(l*b)"),
+        ("What is the formula of Pythagoras theorem", "H^2=B^2+P^2")
+    ],
+    "History": [
+        ("Who was the first prime minister of Pakistan", "Liaqat Ali Khan"),
+        ("When did Islamabad become the capital of Pakistan", "14 August 1967"),
+        ("Who designed the flag of Pakistan", "Amiruddin Kidwai")
+    ],
+    "Economics": [
+        ("What category is involved in business?", "Production"),
+        ("What is one aspect of Demand?", "Ability")
+    ],
+    "Geography": [
+        ("Name a land-locked country", "Tajikistan")
+    ]
 }
 
+
+
 hints = {
-    "Science": [
-        # Pair each question with a corresponding hint.
+    "Science": [("Made up of Hydeogen and Oxygen:")
+        
     ],
     # Repeat for other categories as needed.
 }
