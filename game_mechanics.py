@@ -16,7 +16,7 @@ def welcome_message():
     #------------------------
     # raise NotImplementedError("This function is not implemented yet.")
     #------------------------
-print(welcome_message())
+
 #---------------------------------------
     
 def choose_category(categories):
@@ -39,7 +39,7 @@ def choose_category(categories):
 
 category_list = ["Science", "Maths", "Physics", "Geography"]
 print(category_list)
-(choose_category(category_list))
+
     #------------------------
 
 #---------------------------------------
@@ -58,7 +58,7 @@ def display_score(score, round_number):
     print("User score is:",int(score))
     print("User rounded score is:",int(round_number))
     #------------------------
-display_score(1,2)
+
 #---------------------------------------
     
 def game_over_message(final_score):
@@ -73,7 +73,6 @@ def game_over_message(final_score):
     #------------------------
     print(f'Game over! , Your final score is {final_score}')
     #------------------------
-game_over_message(90)
 
 #---------------------------------------
     
@@ -92,7 +91,7 @@ def run_game_rounds(categories):
         opt = input("")
 
 options = ["Science", "Maths", "Physics", "Geography"]
-run_game_rounds(options)
+
 
 #---------------------------------------
         
@@ -109,8 +108,13 @@ def validate_answer(player_answer, correct_answer):
     """
     #------------------------
     # Add your code here
-    #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    print(f'The player answer is: {player_answer}')
+    print(f'The correct answer is: {correct_answer}')
+    if player_answer == correct_answer:
+        return True
+    else:
+        False
+
     #------------------------
 
 #---------------------------------------
